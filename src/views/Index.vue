@@ -70,25 +70,32 @@
       <hr>
       <div>
         <h3>💼 Projects</h3>
-        <div>
-          <div>
-            <strong>Newizze crm - CRM system of the company</strong>
-            <p>
-              Management system for the internal affairs of the company. What I worked on: fixed bugs, added new functionality (task board, inventory page), etc.
-            </p>
-          </div>
-          <div>
-            <strong>Ecofleet - Delivery system in UK</strong>
-            <div>
-              <img class="py-2" src="@/assets/images/projects/ecofleet.png" width="150px" alt="">
+        <div class="d-flex">
+          <div class="card m-2" style="width: 18rem;">
+            <img src="@/assets/images/projects/ecofleet.png" class="card-img-top" alt="...">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Newizze crm - CRM system of the company</h5>
+              <p class="card-text">Management system for the internal affairs of the company. What I worked on: fixed bugs, added new functionality (task board, inventory page), etc.</p>
+              <div class="d-flex align-items-end flex-grow-1">
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
-            <p>
-              The system received orders from the site, then, after receiving confirmation, sent them to drivers via the API [https://onfleet.com/](https://onfleet.com/).
-              On this project, I fixed errors, generated QR codes for stickers on boxes, generated Excel reports...
-            </p>
-            <a href="https://ecofleet.com/"></a>
           </div>
-     </div>
+
+          <div class="card m-2" style="width: 18rem;">
+            <img src="@/assets/images/projects/ecofleet.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ecofleet - Delivery system in UK</h5>
+              <p class="card-text">
+                The system received orders from the site, then, after receiving confirmation, sent them to drivers via the API [https://onfleet.com/](https://onfleet.com/).
+                On this project, I fixed errors, generated QR codes for stickers on boxes, generated Excel reports...
+              </p>
+              <div class="d-flex align-items-end flex-grow-1">
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="mt-5 text-center">
