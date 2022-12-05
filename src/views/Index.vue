@@ -3,9 +3,15 @@
 </script>
 
 <template>
-  <div>
+  <div class="container">
+    <header>
+      <h1>Hi</h1>
+    </header>
     <main>
-      123
+      Hello
     </main>
+    <footer>
+      @ Viktor
+    </footer>
   </div>
 </template>
