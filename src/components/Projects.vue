@@ -8,16 +8,16 @@ import imageMlms from '@/assets/images/projects/mlms.png'
 
 const projects = [
   {
-    'title': 'Newizze CRM - Company CRM system',
+    'title': 'Newizze CRM',
     'text': `Company internal affairs management system.
         What I worked on: fixed bugs, added new functionality, developed inventory functionality, etc.`,
     'image': imageNewizze,
   },
   {
-    'title': 'Ecofleet - Delivery system in UK',
-    'text': `The system received orders from the site, then, after receiving
+    'title': 'Ecofleet',
+    'text': `Delivery system in UK. The system received orders from the site, then, after receiving
         confirmation, sent them to drivers via the API
-        <a href="https://onfleet.com/" target="_blank">Onfleet</a>.
+        <a class="text-info" href="https://onfleet.com/" target="_blank">Onfleet</a>.
         On this project, I fixed bugs, generated QR codes for stickers for delivery, created functionality for generating reports in Excel format, etc.`,
     'image': imageEcofleet,
     'link': 'https://ecofleet.com/',
@@ -74,6 +74,7 @@ const toggleFullscreen = (event: any) => {
         >
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">{{ project.title }}</h5>
+          <hr>
           <p class="card-text" v-html="project.text"></p>
           <div class="d-flex align-items-end flex-grow-1">
             <a v-if="project.link" target="_blank" :href="project.link" class="btn btn-primary">Visit site</a>
