@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { RouterView } from 'vue-router'
+import SpaceBackground from "@/components/SpaceBackground.vue";
 </script>
 
 <template>
-  <RouterView />
+  <SpaceBackground></SpaceBackground>
 </template>
 
 <style lang="scss" scoped>
