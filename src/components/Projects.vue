@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import imageNewizze from '@/assets/images/projects/newizze.png'
 import imageEcofleet from '@/assets/images/projects/ecofleet.png'
 import imageStubtools from '@/assets/images/projects/stubtools.png'
@@ -49,8 +50,16 @@ const projects = [
         to create reactivity.`,
     'image': imageMlms,
   },
+];
+let fullscreenImage = ref({
+  src: '',
+  enable: false,
+});
 
-]
+const toggleFullscreen = (event: any) => {
+  fullscreenImage.value.src = event.target.src;
+  fullscreenImage.value.enable = !fullscreenImage.value.enable;
+}
 </script>
 
 <template>
@@ -58,21 +67,74 @@ const projects = [
     <h3>💼 Projects</h3>
     <div class="d-flex flex-wrap justify-content-between">
       <div class="card m-2" style="width: 18rem;" v-for="project in projects">
-        <img :src="project.image" class="card-img-top" alt="There is no photo">
+        <img :src="project.image"
+             class="card-img-top"
+             alt="There is no photo"
+             @click="toggleFullscreen"
+        >
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">{{ project.title }}</h5>
           <p class="card-text" v-html="project.text"></p>
           <div class="d-flex align-items-end flex-grow-1">
-            <a v-if="project.link" target="_blank" :href="project.link" class="btn btn-primary" disabled>Visit site</a>
+            <a v-if="project.link" target="_blank" :href="project.link" class="btn btn-primary">Visit site</a>
+            <span v-else class="text-muted">There is no public site.</span>
           </div>
         </div>
       </div>
     </div>
+    <Transition name="bounce">
+      <div v-show="fullscreenImage.enable" id="fullscreen" >
+        <img :src="fullscreenImage.src" @click="toggleFullscreen" alt="">
+      </div>
+    </Transition>
   </div>
 </template>
 
 <style scoped>
 img {
   height: 120px;
+  object-fit: cover;
+  cursor: zoom-in;
 }
+#fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  background-color: rgba(40, 39, 39, 0.89);
+}
+#fullscreen img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  cursor: zoom-out;
+  transition: 0.5s;
+}
+
+
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.3);
+    background-color: transparent;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(40, 39, 39, 0.89);
+
+  }
+}
+
 </style>
