@@ -9,7 +9,7 @@
         <img class="avatar" src="@/assets/images/avatar.jpg" alt="">
       </div>
       <div class="col d-flex flex-column justify-content-center">
-        <h1>Viktor Niderman <span class="badge text-bg-warning">(Portfolio is under development)</span></h1>
+        <h1>Viktor Niderman</h1>
         <p>I'm a full stack web developer based in Portugal. I mainly work with the stack: Laravel + vue.</p>
         <div>
           <a href="https://t.me/zeref95" target="_blank">

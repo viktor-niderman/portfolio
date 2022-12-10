@@ -3,11 +3,16 @@
 </script>
 
 <template>
-  <footer class="my-4 text-center">
-    @ Viktor Niderman, 2022
+  <footer class="py-4 text-center mt-4">
+    © 2022 Viktor Niderman. All rights reserved.
+    <br>
+    All product names, logos, and brands are property of their respective owners.
   </footer>
 </template>
 
 <style scoped>
-
+footer {
+  color: white;
+  background: #474a4d;
+}
 </style>
