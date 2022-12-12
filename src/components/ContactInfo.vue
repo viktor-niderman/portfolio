@@ -25,6 +25,9 @@
           <a href="https://wa.me/79001204757" target="_blank">
             <img src="@/assets/icons/whatsapp.svg" alt="">
           </a>
+          <a href="https://github.com/Zeref95" target="_blank">
+            <img src="@/assets/icons/github.svg" alt="">
+          </a>
           <a href="mailto:viktor.niderman@gmail.com" target="_blank" class="text-info">viktor.niderman@gmail.com</a><br>
         </div>
       </div>
