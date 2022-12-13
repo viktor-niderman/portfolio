@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 const props = defineProps({
   msg: {type: Array, required: true}
 });
@@ -7,7 +7,7 @@ import {onMounted} from "vue";
 
 onMounted(() => {
   class TextScramble {
-    constructor(el: any) {
+    constructor(el) {
       this.el = el
       this.chars = '!<>-_\\/[]{}—=+*^?#________'
       this.update = this.update.bind(this)
