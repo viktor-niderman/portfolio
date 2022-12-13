@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import TextScrambleEffect from "@/components/TextScrambleEffect.vue";
 </script>
 
 <template>
@@ -10,11 +10,13 @@
       </div>
       <div class="col d-flex flex-column justify-content-center">
         <h1 class="display-4 text-white-shadow ">Viktor Niderman</h1>
-        <h3 class="display-6 text-decoration-underline text-white-shadow ">Full Stack Web Developer</h3>
-        <p>Based in Portugal 🇵🇹<br>
+        <TextScrambleEffect :msg="['Fullstack Web Developer']"></TextScrambleEffect>
+        <div class="my-3">
+          Based in Portugal 🇵🇹<br>
           Main stack:
           Laravel <img width="15px" src="@/assets/icons/laravel.svg" alt="">
-          + Vue <img width="15px" src="@/assets/icons/vue.svg" alt=""></p>
+          + Vue <img width="15px" src="@/assets/icons/vue.svg" alt="">
+        </div>
         <div class="icons-container">
           <a href="https://t.me/zeref95" target="_blank">
             <img src="@/assets/icons/telegram.svg" alt="">
