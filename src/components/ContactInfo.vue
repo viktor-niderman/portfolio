@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import TextScrambleEffect from "@/components/TextScrambleEffect.vue";
+import GithubSvg from '@/assets/icons/vue/Github.svg.vue'
 </script>
 
 <template>
@@ -28,7 +29,7 @@ import TextScrambleEffect from "@/components/TextScrambleEffect.vue";
             <img src="@/assets/icons/whatsapp.svg" alt="">
           </a>
           <a href="https://github.com/Zeref95" target="_blank">
-            <img src="@/assets/icons/github.svg" alt="">
+            <GithubSvg></GithubSvg>
           </a>
           <a href="mailto:viktor.niderman@gmail.com" target="_blank" class="text-info">viktor.niderman@gmail.com</a><br>
         </div>
@@ -37,9 +38,13 @@ import TextScrambleEffect from "@/components/TextScrambleEffect.vue";
   </div>
 </template>
 
-<style scoped>
-.icons-container img {
-  width: 35px;
-  padding-right: 10px;
+<style scoped lang="scss">
+.icons-container {
+  img, svg {
+    width: 35px;
+    padding-right: 10px;
+    height: auto;
+  }
+
 }
 </style>

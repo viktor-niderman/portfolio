@@ -13,8 +13,8 @@ import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
 <style lang="scss">
 .theme-switcher {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  right: 20px;
   z-index: 100;
 }
 </style>

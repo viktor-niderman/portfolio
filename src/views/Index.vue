@@ -18,9 +18,6 @@ import Footer from '@/components/Footer.vue'
       <Projects></Projects>
     </main>
     <Footer></Footer>
-    <div id="develop-span">
-      <span class="badge text-bg-warning">(Portfolio is under development)</span>
-    </div>
   </div>
 </template>
 
@@ -30,10 +27,5 @@ import Footer from '@/components/Footer.vue'
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-}
-#develop-span {
-  position: fixed;
-  right: 10px;
-  top: 10px;
 }
 </style>
