@@ -1,9 +1,9 @@
 <script setup lang="ts">
+import {onMounted} from "vue";
+
 const props = defineProps({
   msg: {type: Array, required: true}
 });
-
-import {onMounted} from "vue";
 
 const phrases = props.msg;
 const chars = '!<>-_\\/[]{}—=+*^?#________';
