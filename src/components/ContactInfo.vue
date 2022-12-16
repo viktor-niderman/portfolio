@@ -10,7 +10,7 @@ import TextScrambleEffect from "@/components/TextScrambleEffect.vue";
       </div>
       <div class="col d-flex flex-column justify-content-center">
         <h1 class="display-4 text-white-shadow ">Viktor Niderman</h1>
-        <TextScrambleEffect :msg="['Fullstack Web Developer']"></TextScrambleEffect>
+        <TextScrambleEffect :msg="['Fullstack Web Developer', 'Laravel/Vue developer']"></TextScrambleEffect>
         <div class="my-3">
           Based in Portugal 🇵🇹<br>
           Main stack:
