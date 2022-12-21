@@ -103,7 +103,7 @@ onMounted(() => {
 }
 .text {
   font-weight: 100;
-  font-size: 28px;
+  font-size: 22px;
   /*color: #FAFAFA;*/
 }
 .dud {

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
   <svg width="256px" height="250px" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
     <g>
@@ -5,10 +9,6 @@
     </g>
   </svg>
 </template>
-
-<script>
-
-</script>
 
 <style scoped lang="scss">
 [data-theme="dark"] {
