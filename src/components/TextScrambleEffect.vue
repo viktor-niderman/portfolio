@@ -87,7 +87,7 @@ onMounted(() => {
 
 <template>
   <div class="cont">
-    <div class="text"></div>
+    <div class="text" translate="no"></div>
   </div>
 </template>
 

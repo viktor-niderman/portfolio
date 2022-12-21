@@ -5,7 +5,7 @@
 <template>
   <div>
     <h3>🤲 Skills</h3>
-    <div>
+    <div translate="no">
       <ul>
         <li>
           Frontend:

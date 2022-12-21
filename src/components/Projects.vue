@@ -73,7 +73,7 @@ const toggleFullscreen = (event: any) => {
              @click="toggleFullscreen"
         >
         <div class="card-body d-flex flex-column">
-          <h5 class="card-title">{{ project.title }}</h5>
+          <h5 class="card-title" translate="no">{{ project.title }}</h5>
           <hr>
           <p class="card-text" v-html="project.text"></p>
           <div class="d-flex align-items-end flex-grow-1">

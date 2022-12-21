@@ -32,7 +32,7 @@ let jobs = [
           <div class="card-header">
             <h4>
               <img :src="job.icon" width="28" class="me-3">
-              <a :href="job.link" class="link-info me-2">{{job.title}}</a>
+              <a :href="job.link" class="link-info me-2" translate="no">{{job.title}}</a>
               <span class="badge bg-secondary">{{job.date}}</span>
             </h4>
           </div>
