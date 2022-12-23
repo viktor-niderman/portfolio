@@ -100,6 +100,7 @@ onMounted(() => {
   justify-content: left;
   align-items: center;
   display: flex;
+  user-select: none;
 }
 .text {
   font-weight: 100;

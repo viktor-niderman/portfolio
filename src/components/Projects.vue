@@ -96,6 +96,7 @@ img {
   height: 120px;
   object-fit: cover;
   cursor: zoom-in;
+  user-select: none;
 }
 #fullscreen {
   position: fixed;

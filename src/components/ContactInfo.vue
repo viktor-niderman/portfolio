@@ -39,12 +39,16 @@ import GithubSvg from '@/assets/icons/vue/Github.svg.vue'
 </template>
 
 <style scoped lang="scss">
+img {
+  user-select: none;
+}
 .icons-container {
   img, svg {
     width: 35px;
     padding-right: 10px;
     height: auto;
   }
+  user-select: none;
 
 }
 </style>

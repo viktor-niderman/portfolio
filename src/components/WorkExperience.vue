@@ -50,5 +50,7 @@ let jobs = [
 </template>
 
 <style scoped>
-
+img {
+  user-select: none;
+}
 </style>
