@@ -4,7 +4,7 @@
 
 <template>
   <footer class="py-4 text-center mt-4">
-    © 2022 Viktor Niderman. All rights reserved.
+    © 2023 Viktor Niderman. All rights reserved.
     <br>
     All product names, logos, and brands are property of their respective owners.
   </footer>

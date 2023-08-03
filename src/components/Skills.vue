@@ -14,6 +14,7 @@
             <li>Vue, Vue router, Vuex, Nuxt</li>
             <li>SASS, Bootstrap</li>
             <li>Axios</li>
+            <li>Chrome Extensions</li>
           </ul>
         </li>
         <li>
@@ -23,6 +24,7 @@
             <li>Unix, Apache</li>
             <li>REST API</li>
             <li>Stripe</li>
+            <li>Redis</li>
           </ul>
         </li>
       </ul>

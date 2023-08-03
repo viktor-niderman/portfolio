@@ -5,8 +5,19 @@ import imageEcofleet from '@/assets/images/projects/ecofleet.png'
 import imageStubtools from '@/assets/images/projects/stubtools.png'
 import imagePrimoBrowser from '@/assets/images/projects/primoBrowser.png'
 import imageMlms from '@/assets/images/projects/mlms.png'
+import imageHouseNovel from '@/assets/images/projects/housenovel.png'
 
 const projects = [
+  {
+    'title': 'House Novel',
+    'text': `HouseNovel.com is an interactive platform that allows users to discover,
+      share, and save the history of homes across the United States.
+      Users can search an address, neighborhood, or city, and add pictures, stories,
+      or pieces of home history to the database. It aims to inspire the preservation of historical
+      homes and communities.`,
+    'image': imageHouseNovel,
+    'link': 'https://housenovel.com/',
+  },
   {
     'title': 'Newizze CRM',
     'text': `Company internal affairs management system.
@@ -65,7 +76,7 @@ const toggleFullscreen = (event: any) => {
 <template>
   <div>
     <h3>💼 Projects</h3>
-    <div class="d-flex flex-wrap justify-content-between">
+    <div class="d-flex flex-wrap justify-content-around">
       <div class="card m-2" style="width: 18rem;" v-for="project in projects">
         <img :src="project.image"
              class="card-img-top"

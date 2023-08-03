@@ -16,5 +16,6 @@ import ThemeSwitcher from '@/components/ThemeSwitcher.vue'
   top: 20px;
   right: 20px;
   z-index: 100;
+  cursor: pointer;
 }
 </style>
