@@ -48,8 +48,8 @@ let jobs = [
               <div class="image-container">
                 <img :src="job.icon" width="28" class="me-3" :alt="job.title">
               </div>
-              <div class="lead fw-bold">
-                <a v-if="job.link" :href="job.link" target="_blank" class="link-info" translate="no">{{job.title}}</a>
+              <div class="lead fw-bold" translate="no">
+                <a v-if="job.link" :href="job.link" target="_blank" class="link-info">{{job.title}}</a>
                 <span v-else>{{job.title}}</span>
               </div>
               <div v-if="job.isClose" class="ms-1">

@@ -1,33 +1,36 @@
 <script setup lang="ts">
-
+let skills = [
+  {
+    name: 'Frontend',
+    list: ["HTML, CSS, JS", "Vue, Vue router, Vuex (Pinia), Nuxt", "Webpack, Vite", "SASS, Bootstrap", "Axios", "Chrome Extensions"],
+  },
+  {
+    name: 'Backend',
+    list: ["PHP, Laravel, Orchid", "MySQL", "Stripe", "Redis"],
+  },
+  {
+    name: 'Basic',
+    list: ["Google cloud, AWS, DigitalOcean", "Unix, Apache, Nginx", "REST API", "Git", "Postman"]
+  }
+]
 </script>
 
 <template>
   <div>
     <h3>🤲 Skills</h3>
-    <div translate="no">
-      <ul>
-        <li>
-          Frontend:
+    <div>
+      <div class="d-flex">
+        <div v-for="skill in skills" class="me-3">
           <ul>
-            <li>HTML, CSS, JS</li>
-            <li>Vue, Vue router, Vuex, Nuxt</li>
-            <li>SASS, Bootstrap</li>
-            <li>Axios</li>
-            <li>Chrome Extensions</li>
+            <li>
+              {{skill.name}}:
+              <ul translate="no">
+                <li v-for="el in skill.list">{{el}}</li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li>
-          Backend:
-          <ul>
-            <li>PHP, MySQL, Laravel</li>
-            <li>Unix, Apache</li>
-            <li>REST API</li>
-            <li>Stripe</li>
-            <li>Redis</li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>

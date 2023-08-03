@@ -19,21 +19,6 @@ const projects = [
     'link': 'https://housenovel.com/',
   },
   {
-    'title': 'Newizze CRM',
-    'text': `Company internal affairs management system.
-        What I worked on: fixed bugs, added new functionality, developed inventory functionality, etc.`,
-    'image': imageNewizze,
-  },
-  {
-    'title': 'Ecofleet',
-    'text': `Delivery system in UK. The system received orders from the site, then, after receiving
-        confirmation, sent them to drivers via the API
-        <a class="text-info" href="https://onfleet.com/" target="_blank">Onfleet</a>.
-        On this project, I fixed bugs, generated QR codes for stickers for delivery, created functionality for generating reports in Excel format, etc.`,
-    'image': imageEcofleet,
-    'link': 'https://ecofleet.com/',
-  },
-  {
     'title': 'Stubtools',
     'text': `Innovative tools for professional ticket resellers.
         On this project, I created a site based on the "Landrick" template,
@@ -47,8 +32,10 @@ const projects = [
   },
   {
     'title': 'Primo Browser',
-    'text': `A similar Stubtools system for selling and managing
-        subscriptions to Primo Browser.`,
+    'text': `Primo Browser is a privacy-focused browser built on the Chrome platform that supports
+      multi-session browsing and the full Chrome extension library.
+      It includes unique features such as a color-coded pricing extension,
+      in-browser display of 2FA codes, and the ability to assign custom IP addresses to each tab.`,
     'image': imagePrimoBrowser,
     'link': 'https://primowebbrowser.com/',
   },
@@ -60,6 +47,21 @@ const projects = [
         rewrote the old code written in jQuery on Vue components
         to create reactivity.`,
     'image': imageMlms,
+  },
+  {
+    'title': 'Ecofleet',
+    'text': `Delivery system in UK. The system received orders from the site, then, after receiving
+        confirmation, sent them to drivers via the API
+        <a class="text-info" href="https://onfleet.com/" target="_blank">Onfleet</a>.
+        On this project, I fixed bugs, generated QR codes for stickers for delivery, created functionality for generating reports in Excel format, etc.`,
+    'image': imageEcofleet,
+    'link': 'https://ecofleet.com/',
+  },
+  {
+    'title': 'Newizze CRM',
+    'text': `Company internal affairs management system.
+        What I worked on: fixed bugs, added new functionality, developed inventory functionality, etc.`,
+    'image': imageNewizze,
   },
 ];
 let fullscreenImage = ref({
