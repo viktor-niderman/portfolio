@@ -1,4 +1,4 @@
-# [Portfolio](https://niderman.pro/){target="_blank"}
+# [Portfolio](https://niderman.pro/)
 
 - Vue 3
 - Vite
