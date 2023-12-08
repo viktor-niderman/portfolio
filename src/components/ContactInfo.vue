@@ -19,7 +19,7 @@ import GithubSvg from '@/assets/icons/vue/Github.svg.vue'
           + Vue <img width="15px" src="@/assets/icons/vue.svg" alt="">
         </div>
         <div class="icons-container">
-          <a href="https://t.me/zeref95" target="_blank">
+          <a href="https://t.me/viktor_niderman" target="_blank">
             <img src="@/assets/icons/telegram.svg" alt="">
           </a>
           <a href="https://www.linkedin.com/in/viktor-niderman-28bb47219/" target="_blank">
@@ -28,7 +28,7 @@ import GithubSvg from '@/assets/icons/vue/Github.svg.vue'
           <a href="https://wa.me/79001204757" target="_blank">
             <img src="@/assets/icons/whatsapp.svg" alt="">
           </a>
-          <a href="https://github.com/Zeref95" target="_blank">
+          <a href="https://github.com/viktor-niderman" target="_blank">
             <GithubSvg></GithubSvg>
           </a>
           <a href="mailto:viktor.niderman@gmail.com" target="_blank" class="text-info">viktor.niderman@gmail.com</a><br>
